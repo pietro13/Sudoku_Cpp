@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SudokuWindowClass</class>
+ <widget class="QMainWindow" name="SudokuWindowClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>865</width>
+    <height>679</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sudoku</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="7,3">
+    <property name="sizeConstraint">
+     <enum>QLayout::SetNoConstraint</enum>
+    </property>
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetNoConstraint</enum>
+      </property>
+      <property name="spacing">
+       <number>0</number>
+      </property>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="newSudokuButton">
+        <property name="text">
+         <string>New Sudoku</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="checkButton">
+        <property name="text">
+         <string>Check</string>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="solveButton">
+        <property name="text">
+         <string>Solve</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <action name="actionCreat">
+   <property name="text">
+    <string>Creat</string>
+   </property>
+  </action>
+  <action name="actionInsert">
+   <property name="text">
+    <string>Insert</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="SudokuWindow.qrc"/>
+ </resources>
+ <connections/>
+</ui>
