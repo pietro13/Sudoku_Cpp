@@ -4,7 +4,9 @@
 InsertSudokuWindow::InsertSudokuWindow( QMainWindow* parent) : QMainWindow(nullptr)
 {
     mainW = parent; 
+
     
+
     setMinimumSize(500, 300);
     ui.setupUi(this);
     for (int j = 1; j < DISPLAY_GRID_SIZE; j += 2)
